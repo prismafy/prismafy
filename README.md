@@ -156,7 +156,9 @@ You can also run Prismafy for a custom scope:
 
   - Download Prismafy zip file from github (https://github.com/prismafy/prismafy)
   - Execute Prismafy:
+  ```
     python prismafy.py -h
+  ```
   - Open the index report in the location: prismafy-reports/prismafy-{date}/prismafy_index.html
 
 ## Examples
