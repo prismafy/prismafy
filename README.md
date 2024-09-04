@@ -37,7 +37,8 @@
   Prismafy requires access to SNOWFLAKE.ACCOUNT_USAGE schema, which by default can be accessed only by ACCOUNTADMIN role.
 
   If you do not want to run Prismafy with ACCOUNTADMIN role, the following are the minimum steps to run Prismafy:
-
+  
+  ```
   create role prismafy_role;
   create warehouse prismafy_wh   warehouse_size = xsmall   warehouse_type = standard   auto_suspend = 60   auto_resume = true   initially_suspended = true;
   create  user prismafy password = '*****' default_role = prismafy_role   default_warehouse = prismafy_wh;
@@ -45,6 +46,7 @@
   grant usage on warehouse prismafy_wh   to role prismafy_role;
   grant imported privileges on database snowflake to role prismafy_role;
   grant monitor on  account to role prismafy_role; --Needed for Execution Plans
+  ```  
 
 ## Authentication Methods
 
@@ -158,25 +160,25 @@ You can also run Prismafy for a custom scope:
 ## Examples
 
   All sections for last 6 months of history, using MFA, and hiding password:
-
+  ```
   python prismafy.py -d snowflake -t username_password_mfa -a abc.us-east-2.aws -w warehousename -u user1 –k 171297 -m 6 -r accountadmin
-
+  ```
   Only Section D (Performance) for last 12 months of history, using external browser authentication:
-
+  ```
   python prismafy.py -d snowflake -t externalbrowser -a abc.us-east-2.aws -w warehousename -u user1 -m 12 -r accountadmin –s D
-
+  ```
   Analyze only a specific Query (query_parameterized_hash) for last month of history:
-
+  ```
   python prismafy.py -d snowflake -t password -a abc.us-east-2.aws -w warehousename -u user1 -p welcome1 -m 1 -r accountadmin –aq query_parameterized_hash
-
+  ```
   Analyze only a specific Warehouse (warehouse_name) for last 3 months of history:
-
+  ```
   python prismafy.py -d snowflake -t password -a abc.us-east-2.aws -w warehousetoconnect -u user1 -p welcome1 -m 3 -r accountadmin –aw warehouse_to_analyze
-
+  ```
 ## Help
-
+  ```
 python prismafy.py -h
-
+  ```
 ## Thank you!
 
 Feedback, report a bug, enhancements and new features, questions: prismafy@gmail.com
