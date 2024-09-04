@@ -2,7 +2,9 @@
 
   prismafy - It’s an open-source tool developed in Python to analyze metadata 
   for cloud-native data platforms. It provides charts and insights enabling you 
-  to easily detect and fix problems faster. Originally developed by Deiby Gomez.
+  to easily detect and fix problems faster. 
+  
+  Originally developed by Deiby Gomez.
 
   Documentation: https://drive.google.com/file/d/1LiiGsA8ezzYNvHkLIe9uA75YS_pWQkST/view?usp=sharing
 
