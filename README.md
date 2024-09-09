@@ -64,80 +64,80 @@
 
   - Section A: Computing
 
-    Credits Consumption per warehouse for the history, last month and last week
-    Credits Consumption Details for each warehouse
-    Daily Credits consumption per Snowflake Service
+    - Credits Consumption per warehouse for the history, last month and last week
+    - Credits Consumption Details for each warehouse
+    - Daily Credits consumption per Snowflake Service
 
   - Section B: Storage
 
-    Top Tables by Active Bytes
-    Top Tables by Time Travel Bytes
-    Top Tables by Fail Safe Bytes
-    Top Tables by Retained for clone Bytes
-    Top Databases by Used Storage
-    Storage Details per Database
+    - Top Tables by Active Bytes
+    - Top Tables by Time Travel Bytes
+    - Top Tables by Fail Safe Bytes
+    - Top Tables by Retained for clone Bytes
+    - Top Databases by Used Storage
+    - Storage Details per Database
 
   - Section C: Credits
 
-    Credits Consumption per warehouse for the history, last month and last week
-    Credits Consumption Details for each warehouse
-    Daily Credits consumption per Snowflake Service
+    - Credits Consumption per warehouse for the history, last month and last week
+    - Credits Consumption Details for each warehouse
+    - Daily Credits consumption per Snowflake Service
 
   - Section D: Performance
 
-    Top Query per several metrics, for last month and last week. 
-    Top Tables per reclustering  
-    Top Tables with poor pruning
-    For the top 10 Query:
-      Bytes Details 
-      Calls Details (how frequently is called)
-      Time Details
-      Rows Details 
-      Historical Execution Plans
-      Changes on Execution Plans 
-      Growth over each execution
-      Pruning Efficiency for Tables Used by the Query
-      Accessed Objects by the Query
+    - Top Query per several metrics, for last month and last week. 
+    - Top Tables per reclustering  
+    - Top Tables with poor pruning
+    - For the top 10 Query:
+      - Bytes Details 
+      - Calls Details (how frequently is called)
+      - Time Details
+      - Rows Details 
+      - Historical Execution Plans
+      - Changes on Execution Plans 
+      - Growth over each execution
+      - Pruning Efficiency for Tables Used by the Query
+      - Accessed Objects by the Query
 
   - Section E: Security
 
-    Failed Logins
-    New Users Logins in last month and last week
-    Unfrequented Users with Logins
-    Users with Accountadmin and Securityadmin privileges
-    Recent changes on Network policies, network rules, masking policies, row access polidies
-    Recent Password changes
-    Sessions per authentication method
-    Users with top Logins 
-    Changes on Client Drivers used by Users
-    Changes on IPs for Logins 
+    - Failed Logins
+    - New Users Logins in last month and last week
+    - Unfrequented Users with Logins
+    - Users with Accountadmin and Securityadmin privileges
+    - Recent changes on Network policies, network rules, masking policies, row access polidies
+    - Recent Password changes
+    - Sessions per authentication method
+    - Users with top Logins 
+    - Changes on Client Drivers used by Users
+    - Changes on IPs for Logins 
 
   - Section F: Data Transfer
 
-    Top Clouds used for data transfer
-    Historical behavior for data transfer per cloud
-    Replication Usage per database
-    External Functions
+    - Top Clouds used for data transfer
+    - Historical behavior for data transfer per cloud
+    - Replication Usage per database
+    - External Functions
 
   - Section G: Maintenance
 
-    Less Accessed Objects
-    Users with no sessions in the last 6 months
-    Users with no sessions in the last 3 months
-    Snowflake Tasks in Status that need attention
-    Snowpipes in Status that need attention
-    *Non Default parameters for Account, Databases and Warehouses
-    Warehouses with no activity in the last 3 months
-    Warehouses with no activity in the last month
-    Historical Behavior per SQL Operation Type
-    Historical Behavior per SQL Operation Type per database
-    Resource Monitors
+    - Less Accessed Objects
+    - Users with no sessions in the last 6 months
+    - Users with no sessions in the last 3 months
+    - Snowflake Tasks in Status that need attention
+    - Snowpipes in Status that need attention
+    - Non Default parameters for Account, Databases and Warehouses
+    - Warehouses with no activity in the last 3 months
+    - Warehouses with no activity in the last month
+    - Historical Behavior per SQL Operation Type
+    - Historical Behavior per SQL Operation Type per database
+    - Resource Monitors
 
   - Section H: DBT
 
-    Models information (DBT must be configured with Query Comments https://docs.getdbt.com/reference/project-configs/query-comment)
-    Top models for last month
-    Top models for last week
+    - Models information (DBT must be configured with Query Comments https://docs.getdbt.com/reference/project-configs/query-comment)
+    - Top models for last month
+    - Top models for last week
 
 
 ## Fine-Grained Scope
